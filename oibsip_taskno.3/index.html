@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <form name="forms">
+        <div id="result">
+             <input style="padding-left: 8px;" type="text" name="answer">
+        </div>
+        <div class="row">
+            <input type="button" value=" ( " onclick="forms.answer.value +='(' ">
+            <input type="button" value=" ) " onclick="forms.answer.value +=')' ">
+            <input type="button" value=" % " onclick="forms.answer.value +='%' ">
+            <input id="ac" type="button" value=" AC " onclick="forms.answer.value ='' ">
+        </div>
+        <div class="row">
+            <input type="button" value=" 7 " onclick="forms.answer.value +='7' ">
+            <input type="button" value=" 8 " onclick="forms.answer.value +='8' ">
+            <input type="button" value=" 9 " onclick="forms.answer.value +='9' ">
+            <input type="button" value=" / " onclick="forms.answer.value +='/' ">
+        </div>
+        <div class="row">
+            <input type="button" value=" 4 " onclick="forms.answer.value +='4' ">
+            <input type="button" value=" 5 " onclick="forms.answer.value +='5' ">
+            <input type="button" value=" 6 " onclick="forms.answer.value +='6' ">
+            <input type="button" value=" * " onclick="forms.answer.value +='*' ">
+        </div>
+        <div class="row">
+            <input type="button" value=" 1 " onclick="forms.answer.value +='1' ">
+            <input type="button" value=" 2 " onclick="forms.answer.value +='2' ">
+            <input type="button" value=" 3 " onclick="forms.answer.value +='3' ">
+            <input type="button" value=" - " onclick="forms.answer.value +='-' ">
+        </div>
+        <div class="row">
+            <input type="button" value=" 0 " onclick="forms.answer.value +='0' ">
+            <input type="button" value=" . " onclick="forms.answer.value +='.' ">
+            <input id="isequ" type="button" value=" = " onclick="forms.answer.value = eval(forms.answer.value)">
+            <input type="button" value=" + " onclick="forms.answer.value +='+' ">
+        </div>
+        
+        
+    </form>
+</body>
+</html>
